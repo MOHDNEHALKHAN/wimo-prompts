@@ -20,6 +20,20 @@ function Home() {
       <h1 className="text-3xl font-bold mb-6 text-center">
         WIMO Prompts
       </h1>
+    <div className="bg-white p-4 rounded mb-6">
+      <h2 className="text-lg font-bold mb-3">35% Calculator</h2>
+      <input
+        type="number"
+        placeholder="Enter amount"
+        className="border p-2 w-full mb-2 rounded"
+        onChange={(e) => {
+          const result = (parseFloat(e.target.value) * 0.35).toFixed(2)
+          document.getElementById("result").textContent = result || "0"
+        }}
+      />
+      <p className="text-sm"><span id="result" className="font-bold">0</span></p>
+    </div>
+      
 
       {/* Buttons */}
 

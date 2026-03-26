@@ -5,9 +5,9 @@ function PromptItem({ text }) {
   }
 
   return (
-    <li className="flex justify-between items-center border p-3 mb-2 rounded">
+    <li className="flex justify-between items-center ">
 
-      <span>• {text}</span>
+      <span> {text}</span>
 
       <button
         onClick={copyPrompt}
