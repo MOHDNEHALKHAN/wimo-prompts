@@ -15,7 +15,7 @@ function Home() {
   }
 
   return (
-    <div className="p-10  w-full max-w-3xl mx-auto bg-gray-100">
+    <div className="p-10  w-full max-w-4xl mx-auto bg-gray-100">
 
       <h1 className="text-3xl font-bold mb-6 text-center">
         WIMO Prompts
@@ -37,32 +37,32 @@ function Home() {
 
       {/* Buttons */}
 
-      <div className="grid grid-cols-2 gap-3 mb-6">
+      <div className="gap-3 mb-6 flex space-x-2 items-end">
 
         <button
           onClick={() => setCategory("pre")}
-          className="bg-yellow-300 text-black p-2 rounded"
+          className={`bg-yellow-300 text-black p-2 rounded ${category === "pre" ? "border-b-4 border-black" : "border-b-4 border-transparent"}`}
         >
           Pre Pickup
         </button>
 
         <button
           onClick={() => setCategory("post")}
-          className="bg-blue-300 text-black p-2 rounded"
+          className={`bg-blue-300 text-black p-2 rounded ${category === "post" ? "border-b-4 border-black" : "border-b-4 border-transparent"}`}
         >
           Post Pickup
         </button>
 
         <button
           onClick={() => setCategory("cancellation")}
-          className="bg-emerald-300 text-black p-2 rounded"
+          className={`bg-emerald-300 text-black p-2 rounded ${category === "cancellation" ? "border-b-4 border-black" : "border-b-4 border-transparent"}`}
         >
           Cancellation
         </button>
 
         <button
           onClick={() => setCategory("pnnotes")}
-          className="bg-orange-300 text-black p-2 rounded"
+          className={`bg-orange-300 text-black p-2 rounded ${category === "pnnotes" ? "border-b-4 border-black" : "border-b-4 border-transparent"}`}
         >
           PN Notes
         </button>
@@ -79,24 +79,25 @@ function Home() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      {/* Prompts */}
+      {/* Prompts - scrollable area */}
+      <div className="bg-white p-4 rounded">
+        <div className="h-72 overflow-auto">
+          <ul>
+            {filteredPrompts.map((prompt, index) => (
+              <li
+                key={index}
+                className="flex justify-between border p-3 mb-2 rounded"
+              >
+                <span>{prompt}</span>
 
-      <ul>
-
-        {filteredPrompts.map((prompt, index) => (
-          <li
-            key={index}
-            className="flex justify-between border p-3 mb-2 rounded"
-          >
-            <span>{prompt}</span>
-
-            <button onClick={() => copyPrompt(prompt)}>
-              📋
-            </button>
-          </li>
-        ))}
-
-      </ul>
+                <button onClick={() => copyPrompt(prompt)}>
+                  📋
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
     </div>
   )
