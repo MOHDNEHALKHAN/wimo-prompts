@@ -88,7 +88,7 @@ function Home() {
                 key={index}
                 className="flex justify-between border p-3 mb-2 rounded"
               >
-                <span>{prompt}</span>
+                <span>{index + 1}. {prompt}</span>
 
                 <button onClick={() => copyPrompt(prompt)}>
                   📋
