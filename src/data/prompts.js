@@ -103,6 +103,7 @@ export const prompts = {
     "The delay is from restaurant side as they mistakenly give wrong order to delivery partner but now he got right one will deliver it soon",
     "The delay is happen as another partner picked the order , order is ready just now once pick up by delivery partner , order will delivered",
     "As per restaurant partner the delivery partner has picked the order but not marked as picked on his device",
+    "The delivery partner is not responding to calls but as per restaurant partner the order is picked up but not marked as picked on his device",
     "The delay is from restaurant side and delivery partner is not responding but as per tracking he is on the way to deliver the order",
     "The delivery partner is not responding to the calls at the moment but as per tracking he has picked the order and getting closer to the customer location.",
     "The delivery partner is not responding to the calls, but as per tracking the delay is from his side and he is getting closer to the customer location.",
