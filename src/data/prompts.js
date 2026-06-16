@@ -309,6 +309,7 @@ export const prompts = {
     "dp 1 unresponsive and dp2 says he is not accepting his calls , hence escalating as per sop",
     "I call dp but no calling voice coming on my side , network issue as i check call logs his voice is coming",
     "Before i started to ask dp delay and time he cut the call and not accepting other calls",
+    "unable to ask dp question as dp cut the call"
   ]
 
 }
