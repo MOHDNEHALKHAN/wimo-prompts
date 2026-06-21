@@ -248,6 +248,7 @@ export const prompts = {
     "The restaurant and the delivery partner are unresponsive to the calls as we are unable to track, your order will not be proceed further",
     "The order will not be proceed further as restaurant partner is not responsive and delivery partner not allowed in the restaurant",
     "As per tracking the order is already cancelled by merchant partner as restaurant is closed",
+    "The delivery partner confirmed that the location is incorrect due to which he is unable to deliver the order.",
     "The restaurant partner is unresponsive as per delivery partner there is no update hence order will not be delivered",
     "The order is already cancelled by the restaurant partner due to out of stock items hence it will not be delivered",
     "Due to kitchen is full as restaurant got bulk orders the order is already cancelled hence it will not be delivered",
