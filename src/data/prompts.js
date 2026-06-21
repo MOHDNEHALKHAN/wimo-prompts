@@ -242,6 +242,7 @@ export const prompts = {
     "The restaurant partner is not responding to the calls as per tracking the order is already cancelled as",
     "The order is already cancelled by the customer hence it will not be delivered",
     "The order is already cancelled as delivery partner met with an accident ",
+    "As confirm over the call with restaurant partner that they will not able to prepare the order due to gas cylinder issue",
     "The order is already cancelled because of delayed order ",
     "The order has already been cancelled, as the delivery partner confirmed that another partner picked up the order.",
     "The restaurant and the delivery partner are unresponsive to the calls as we are unable to track, your order will not be proceed further",
