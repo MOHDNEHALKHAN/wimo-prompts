@@ -1,10 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { prompts } from "../data/prompts"
 
 function Home() {
 
   const [category, setCategory] = useState("pre")
   const [search, setSearch] = useState("")
+  const [amount, setAmount] = useState("")
+
+  useEffect(() => {
+    if (amount === "") return
+
+    const clearCalculator = setTimeout(() => setAmount(""), 60_000)
+
+    return () => clearTimeout(clearCalculator)
+  }, [amount])
+
+  const result = amount === "" || Number.isNaN(Number(amount))
+    ? "0"
+    : (Number(amount) * 0.35).toFixed(2)
 
   const filteredPrompts = prompts[category].filter((p) =>
     p.toLowerCase().includes(search.toLowerCase())
@@ -26,12 +39,10 @@ function Home() {
         type="number"
         placeholder="Enter amount"
         className="border p-2 w-full mb-2 rounded"
-        onChange={(e) => {
-          const result = (parseFloat(e.target.value) * 0.35).toFixed(2)
-          document.getElementById("result").textContent = result || "0"
-        }}
+        value={amount}
+        onChange={(e) => setAmount(e.target.value)}
       />
-      <p className="text-sm"><span id="result" className="font-bold">0</span></p>
+      <p className="text-sm"><span className="font-bold">{result}</span></p>
     </div>
       
 
