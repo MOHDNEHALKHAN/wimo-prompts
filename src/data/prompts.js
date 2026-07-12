@@ -321,7 +321,7 @@ export const prompts = {
     "Got ticket with already cancelled order",
     "DP vehicle issue i tried reassignment but its not available",
     "dp not responding and not trackable hence escalating issue",
-    "dp and mx both unresponsive , tried re assignment but it failed hence escalated",
+    "dp and mx both unresponsive , tried re assignment, unable to reassign hence escalated",
     "dp and mx both unresponsive , done re assignment",
     "mx say order is ready , no dp in res location , re assignment not available hence escalated",
     "mx say order is picked by dp but dp is not responding delay >30 mins hence escalated",
