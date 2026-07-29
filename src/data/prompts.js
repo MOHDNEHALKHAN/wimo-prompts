@@ -50,6 +50,7 @@ export const prompts = {
     "The order is delay from restaurant as per delivery partner order is ready he will be picking up soon",
     "The delivery partner is not responding to the calls as per tracking there is a group orders once another order is prepared by the restaurant the delivery partner will deliver soon",
     "The order is prepared by the restaurant and delivery partner is not responding to calls he will be reaching the restaurant soon",
+    "The delivery partner is on the way to pickup the order, and delay is due to re assignment of order from another delivery partner as restaurant was delaying the order",
     "The delay is from delivery partner  as he unable to find the restaurant but now he got the location and on the way to pickup the order",
     "The delivery partner has just reached the restaurant for pickup and delay is due to",
     "The delay is due to operational issue but the delivery partner will pickup the order soon",
